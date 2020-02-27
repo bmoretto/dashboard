@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create User</title>
+</head>
+<style type="text/css">
+    .table-responsive{
+        width: 100% !important;
+    }
+
+    .table {
+        border: 1px solid white;
+        width: 25% !important; /*Importante manter o !important rs */
+        margin: auto;
+        font-family:courier;
+        color:white;
+    }
+
+    .table-status {
+        margin-top: 250px;
+    }
+
+    input {
+        alignment: right;
+    }
+
+    .button {
+        background-color:#000000;
+        border:3px solid #ffffff;
+        display: block;
+        cursor:pointer;
+        color:#ffffff;
+        font-family:Courier New;
+        font-size:14px;
+        font-weight:bold;
+        padding:6px 8px;
+        text-decoration:none;
+        margin-left: 76px;
+    }
+    .button:hover {
+        background-color:#ffffff;
+    }
+    .button:active {
+        position:relative;
+        top:1px;
+    }
+
+</style>
+<body bgcolor="black">
+
+    <form action="/createuser" method="post">
+        <div class="container">
+            <div class="table-responsive">
+                <table class="table table-status">
+                    <tr><td>&nbsp;</td></tr>
+                    <tr>
+                        <td>
+                            <label>Nome Completo: </label>
+                        </td>
+                        <td>
+                            <input type="text" name="nome" maxlength="60">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>CPF:</label>
+                        </td>
+                        <td>
+                            <input type="text" name="cpf" maxlength="11">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Usuário:</label>
+                        </td>
+                        <td>
+                            <input type="text" name="user" maxlength="15">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Senha:</label>
+                        </td>
+                        <td>
+                            <input type="password" name="senha" maxlength="15">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>&nbsp;</label>
+                        </td>
+                        <td>
+                            <button class="button" type="submit">Cadastrar</button>
+                        </td>
+                    </tr>
+                    <tr><td>&nbsp;</td></tr>
+                </table>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
